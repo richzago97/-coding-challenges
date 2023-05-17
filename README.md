@@ -1,5 +1,3 @@
-# -coding-challenges
-
 ## Exercícios de Lógica em JavaScript
 
 Este repositório contém uma coleção de exercícios de lógica resolvidos por mim, abrangendo uma variedade de problemas de lógica e algoritmos. Cada exercício é apresentado com seu enunciado e solução em TypeScript.
