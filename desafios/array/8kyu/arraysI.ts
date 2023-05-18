@@ -126,6 +126,21 @@ export const checkBiggerName2 = (names: string[]): string => {
     return `O nome ${biggerName} é o maior da lista, e seu indice é ${index}`
 }
 
+let numbers = [1,4,6,9,11,10]
+export const sumLastTwoPositionsMutipleOfTwo = (values: number[]): string => {
+    let lastPosition = values.length - 1
+    let secondLastPosition = values.length - 2
+
+    const sumLastPosition = values[lastPosition]
+    const sumSecondLastPosition = values[secondLastPosition]
+
+    const totalSum = sumLastPosition + sumSecondLastPosition
+
+    if(totalSum % 2 === 0){
+        return `A soma ${totalSum} é um múltiplo de 2`
+    }
+        return `A soma ${totalSum} não é um múltiplo de 2`
+}
 
 
 
