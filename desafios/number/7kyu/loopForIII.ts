@@ -16,9 +16,9 @@
   PRÓXIMO -> Representa o valor seguinte do contador.
 */
 
-const fibonacciNumbers = (): void => {
-    let atual = 1;
-    let anterior = 0;
+export const fibonacciNumbers = (): void => {
+    let atual: number = 1;
+    let anterior: number = 0;
   
     for (let i = 1; i <= 15; i++) {
       console.log(anterior);
@@ -27,6 +27,19 @@ const fibonacciNumbers = (): void => {
       atual = proximo;
     }
   };
+
+  /*
+    Escreva uma função que apresenta os valores numericos de Fibonnaci
+  */
+
+export const fibonacci = (n: number): number[] => {
+    const sequence: number[] = [0, 1];
+    for(let i = 2; i < n; i++){
+      const num = sequence[i - 1] + sequence[i - 2];
+      sequence.push(num);
+    }
+      return sequence
+    }
 
 /*
   Escrever um programa que calcule e apresente o somatório do número de
@@ -44,6 +57,15 @@ const fibonacciNumbers = (): void => {
   é sempre o dobro da quantidade anterior.
 */
 
+export const sumGrains = (): number => {
+  let totalGrains: number = 0
+  let grainsBoardCurrent: number = 1;
+  for(let i = 1; i <= 64; i++){
+      totalGrains += grainsBoardCurrent
+      grainsBoardCurrent *= 2
+  }
+  return totalGrains
+}  
   
 
   
