@@ -4,19 +4,11 @@
     e N se o parâmetro for zero ou negativo.
 */
 
-const isPositiveOrNegative = (number: number): string => {
+export const isPositiveOrNegative = (number: number): string => {
     if(number >= 0) {
         return "P"
     }
     return "N"
 }
 
-const isPostiveOrNegative2 = (num: number):string => (num > 0 ? "P": "N");
-
-console.log("O número É positivo ou negativo?")
-console.log(isPositiveOrNegative(5))
-console.log("****************")
-
-console.log("O número É positivo ou negativo?")
-console.log(isPostiveOrNegative2(5))
-console.log("****************")
+export const isPostiveOrNegative2 = (num: number):string => (num > 0 ? "P": "N");
