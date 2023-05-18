@@ -4,7 +4,7 @@
     Caso contrário você deverá retornar a seguinte frase: 
     "O primeiro número não é maior que o segundo."
 */
-const sumIfFirstIsBigger = (num1: number, num2: number): number | string => {
+export const sumIfFirstIsBigger = (num1: number, num2: number): number | string => {
 
     if(num1 > num2){
         return num1 + num2
