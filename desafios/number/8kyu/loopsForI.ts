@@ -2,13 +2,13 @@
   Escreva uma função chamada renderUpToTwenty. Quando a função for chamada, os números de 0 a 20 
   devem ser impressos no console.
 */
-const renderUpToTwenty = () => {
+export const renderUpToTwenty = () => {
     for(let i = 0; i <= 20; i++){
         console.log(i)
     }
 }
 
-const renderUpToTwenty2 = () => {
+export const renderUpToTwenty2 = () => {
     let number = 0
     while(number <= 20){
         console.log(number++)
@@ -20,7 +20,7 @@ const renderUpToTwenty2 = () => {
   10 a 100, contando de 10 em 10, devem ser impressos no console.
 */
 
-const tenInTenToAHundred = () => {
+export const tenInTenToAHundred = () => {
     for(let i = 10; i <= 100; i += 10){
         console.log(i)
     }
@@ -31,7 +31,7 @@ const tenInTenToAHundred = () => {
   os valores entre 0 e 20 que forem ímpares.
 */
 
-const oddUpToTwenty = (): void => {
+export const oddUpToTwenty = (): void => {
     for (let i = 1; i <= 20; i += 2) {
       console.log(i);
     }
@@ -42,7 +42,7 @@ const oddUpToTwenty = (): void => {
   os valores entre 0 e 20 que forem pares.
 */
 
-const evenUpToTwenty = (): void => {
+export const evenUpToTwenty = (): void => {
     for (let i = 0; i <= 20; i += 2) {
       console.log(i);
     }
