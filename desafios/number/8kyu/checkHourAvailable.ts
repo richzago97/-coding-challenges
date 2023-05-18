@@ -5,11 +5,9 @@
     menor ou igual a 19, retorne "O /pergunta está em horário de funcionamento."
     Caso contrário retorne "O /pergunta não está em horário de funcionamento."
 */
-const checkHourAvailable = (inicio: number, termino: number): string => {
+export const checkHourAvailable = (inicio: number, termino: number): string => {
     if(inicio >= 11 && termino <= 19){
         return "O /pergunta está em horário de funcionamento";
     }
         return "O /pergunta não está em horário de funcionamento";
 }
-
-console.log(checkHourAvailable(11, 18))
