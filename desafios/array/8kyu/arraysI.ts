@@ -29,23 +29,34 @@ export const myArrMinFive2 = (value: string): string[] => {
 */
 let arr = ["Hermanoteu", "Olonéia", "Migalatéia", "Godart"];
 
-export const checkPositionExists = (value: number): string => {
+export const checkPositionExists = (pos: number): string => {
     for(let i = 0; i < arr.length; i++){
-        if(arr[i] === arr[value]){
-            return arr[value]
+        if(arr[i] === arr[pos]){
+            return arr[pos]
         }
     }
     return "Valor não encontrado"
 }
 
-export const checkPositionExists2 = (value: number): string => {
+
+export const checkPositionExists2 = (pos: number): string => {
     let result: string = "Valor não encontrado"
     arr.forEach((item, index) => { 
-        if(index === value){
-          result = item
+        if(index === pos){
+            result = item
         }
     })
     return result
+}
+
+export const checkPositionExists3 = (pos: number): string => {
+    const value = arr[pos]
+
+    if(value){
+        return value
+    }
+
+    return "Valor não encontrado."
 }
 
 /*
@@ -60,8 +71,59 @@ export const checkPositionExists2 = (value: number): string => {
 */
 
 const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
 export const isPositionEvenOrOdd = (num: number): string => {
-    return "";
+    let result = 0
+   for(let i = 0; i < numbersArray.length; i++){
+    if(numbersArray[i] === numbersArray[num]){
+        result = numbersArray[i]
+        if(result % 2 === 0){
+            return "O valor encontrado nessa posição é par"
+        }else{
+            return "O valor encontrado nessa posição é impar"
+        }
+    }
+   }
+   return "Valor não encontrado!"
+}
+
+export const isPositionEvenOrOdd2 = (position: number): string => {
+    const value = numbersArray[position];
+    
+    if (value % 2 === 0) {
+      return "O valor encontrado nesta posição é par";
+    } else if(value % 2 === 1) {
+      return "O valor encontrado nesta posição é ímpar";
+    } else {
+        return "Valor não encontrado!"
+    }
+  };
+
+  const namesArray = ["Pedro", "Rafael", "José"]
+
+export const checkBiggerName = (names: string[]): string => {
+    let biggerName = names[0]
+    let index = 0;
+    for(let i = 0; i < namesArray.length; i++){
+        if(names[i].length > biggerName.length){
+            biggerName = names[i];
+            index = i;
+        }
+    }
+    return `O nome ${biggerName} é o maior da lista, e seu indice é ${index}`
+}
+
+export const checkBiggerName2 = (names: string[]): string => {
+    let biggerName = names[0]
+    let index = 0
+
+    names.forEach((name, currentIndex) => {
+        if(name.length > biggerName.length){
+            biggerName = name
+            index = currentIndex
+        }
+    })
+    return `O nome ${biggerName} é o maior da lista, e seu indice é ${index}`
 }
 
 
