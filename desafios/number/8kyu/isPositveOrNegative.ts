@@ -11,4 +11,5 @@ export const isPositiveOrNegative = (number: number): string => {
     return "N";
 };
 
-export const isPostiveOrNegative2 = (num: number): string => (num > 0 ? "P" : "N");
+export const isPostiveOrNegative2 = (num: number): string =>
+    num > 0 ? "P" : "N";

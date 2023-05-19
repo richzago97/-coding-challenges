@@ -49,9 +49,4 @@ export const calculateSumAndAverage = () => {
         }
     }
     const media_arit = sum / count;
-}
-
-
-
-
-
+};
