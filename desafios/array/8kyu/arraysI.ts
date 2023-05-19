@@ -27,7 +27,7 @@ export const myArrMinFive2 = (value: string): string[] => {
     Caso a posição exista, retorne o nome que se encontra nela. ⁠Caso não seja 
     acessado nenhuma posição com o valor recebido, ⁠alerte: "Valor não encontrado".
 */
-let arr = ["Hermanoteu", "Olonéia", "Migalatéia", "Godart"];
+let arr = ['Hermanoteu', 'Olonéia', 'Migalatéia', 'Godart'];
 
 export const checkPositionExists = (pos: number): string => {
     for (let i = 0; i < arr.length; i++) {
@@ -35,11 +35,11 @@ export const checkPositionExists = (pos: number): string => {
             return arr[pos];
         }
     }
-    return "Valor não encontrado";
+    return 'Valor não encontrado';
 };
 
 export const checkPositionExists2 = (pos: number): string => {
-    let result: string = "Valor não encontrado";
+    let result: string = 'Valor não encontrado';
     arr.forEach((item, index) => {
         if (index === pos) {
             result = item;
@@ -55,7 +55,7 @@ export const checkPositionExists3 = (pos: number): string => {
         return value;
     }
 
-    return "Valor não encontrado.";
+    return 'Valor não encontrado.';
 };
 
 /*
@@ -77,28 +77,28 @@ export const isPositionEvenOrOdd = (num: number): string => {
         if (numbersArray[i] === numbersArray[num]) {
             result = numbersArray[i];
             if (result % 2 === 0) {
-                return "O valor encontrado nessa posição é par";
+                return 'O valor encontrado nessa posição é par';
             } else {
-                return "O valor encontrado nessa posição é impar";
+                return 'O valor encontrado nessa posição é impar';
             }
         }
     }
-    return "Valor não encontrado!";
+    return 'Valor não encontrado!';
 };
 
 export const isPositionEvenOrOdd2 = (position: number): string => {
     const value = numbersArray[position];
 
     if (value % 2 === 0) {
-        return "O valor encontrado nesta posição é par";
+        return 'O valor encontrado nesta posição é par';
     } else if (value % 2 === 1) {
-        return "O valor encontrado nesta posição é ímpar";
+        return 'O valor encontrado nesta posição é ímpar';
     } else {
-        return "Valor não encontrado!";
+        return 'Valor não encontrado!';
     }
 };
 
-const namesArray = ["Pedro", "Rafael", "José"];
+const namesArray = ['Pedro', 'Rafael', 'José'];
 
 export const checkBiggerName = (names: string[]): string => {
     let biggerName = names[0];
@@ -160,21 +160,21 @@ export const sumLastTwoPositionsMutipleOfTwo = (values: number[]): string => {
     Caso não sejam, retorne: "Não é quem eu pensava"
 */
 let arr_names = [
-    "Pedro",
-    "Rafael",
-    "José",
-    "Carla",
-    "Maria",
-    "Josef",
-    "Raquel",
+    'Pedro',
+    'Rafael',
+    'José',
+    'Carla',
+    'Maria',
+    'Josef',
+    'Raquel',
 ];
 export const checkIfNameAlreadyExists = (name: string, pos: number): string => {
     const pos_name = arr_names[pos];
 
     if (pos_name === name) {
-        return "Acertei";
+        return 'Acertei';
     }
-    return "Não é quem eu pensava";
+    return 'Não é quem eu pensava';
 };
 
 /*
@@ -215,7 +215,7 @@ export const whichArrayIsBigger = (
             array2[array2.length - 1]
         }`;
     } else {
-        return "Os dois arrays têm o mesmo tamanho.";
+        return 'Os dois arrays têm o mesmo tamanho.';
     }
 };
 
@@ -243,6 +243,6 @@ export const whichArrayIsBigger2 = (
             array2[array2.length - 1]
         }`;
     } else {
-        return "Os dois arrays têm o mesmo tamanho.";
+        return 'Os dois arrays têm o mesmo tamanho.';
     }
 };
