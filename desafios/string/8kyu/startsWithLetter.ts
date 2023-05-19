@@ -8,5 +8,4 @@
 */
 export const startsWithLetter = (palavra: string, letra: string): boolean => {
     return palavra[0] === letra[0];
-}
-
+};
