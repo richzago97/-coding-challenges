@@ -6,7 +6,7 @@
     parâmetro não começar com a letra passada no segundo parâmetro, 
     retorne false.
 */
-export const startsWithLetter  = (palavra: string, letra:string): boolean => {
-    return palavra[0] === letra[0]
+export const startsWithLetter = (palavra: string, letra: string): boolean => {
+    return palavra[0] === letra[0];
 }
 
