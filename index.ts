@@ -10,11 +10,15 @@ import { isPalindromo } from "./desafios/string/7kyu/isPalindromo";
 import { startsWithLetter } from "./desafios/string/8kyu/startsWithLetter";
 
 //arrays
-import { myArrMinFive, myArrMinFive2, checkPositionExists, checkPositionExists2, checkPositionExists3, isPositionEvenOrOdd, isPositionEvenOrOdd2, checkBiggerName, checkBiggerName2, sumLastTwoPositionsMutipleOfTwo } from "./desafios/array/8kyu/arraysI";
+import { myArrMinFive, myArrMinFive2, checkPositionExists, checkPositionExists2, checkPositionExists3, isPositionEvenOrOdd, isPositionEvenOrOdd2, checkBiggerName, checkBiggerName2, sumLastTwoPositionsMutipleOfTwo, checkIfNameAlreadyExists } from "./desafios/array/8kyu/arraysI";
 
 /*
-    EXEMPLO
+    EXEMPLO:
+
     Chamar a função aqui, algumas precisam informar dados nos parametros.
 
-    fibonacciNumbers()
+    EX 1:
+    console.log(checkIfNameAlreadyExists("Pedro", 0)); // precisa de parametro
+    EX 2:
+    fibonacciNumbers() //não precisa de parametro
 */
