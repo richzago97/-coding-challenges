@@ -5,10 +5,10 @@
 */
 
 export const isPositiveOrNegative = (number: number): string => {
-    if(number >= 0) {
-        return "P"
+    if (number >= 0) {
+        return "P";
     }
-    return "N"
-}
+    return "N";
+};
 
-export const isPostiveOrNegative2 = (num: number):string => (num > 0 ? "P": "N");
+export const isPostiveOrNegative2 = (num: number): string => (num > 0 ? "P" : "N");

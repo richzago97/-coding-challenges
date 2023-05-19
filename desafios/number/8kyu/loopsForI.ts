@@ -3,17 +3,17 @@
   devem ser impressos no console.
 */
 export const renderUpToTwenty = () => {
-    for(let i = 0; i <= 20; i++){
-        console.log(i)
-    }
-}
+  for (let i = 0; i <= 20; i++) {
+    console.log(i);
+  }
+};
 
 export const renderUpToTwenty2 = () => {
-    let number = 0
-    while(number <= 20){
-        console.log(number++)
-    }
-}
+  let number = 0;
+  while (number <= 20) {
+    console.log(number++);
+  }
+};
 
 /*
   Escreva uma função chamada tenInTenToAHundred(). Quando a função for chamada, os números de 
@@ -21,10 +21,10 @@ export const renderUpToTwenty2 = () => {
 */
 
 export const tenInTenToAHundred = () => {
-    for(let i = 10; i <= 100; i += 10){
-        console.log(i)
-    }
-}
+  for (let i = 10; i <= 100; i += 10) {
+    console.log(i);
+  }
+};
 
 /*
   Escreva uma função chamada oddUpToTwenty(). Quando a função for chamada, apresente no console 
@@ -32,10 +32,10 @@ export const tenInTenToAHundred = () => {
 */
 
 export const oddUpToTwenty = (): void => {
-    for (let i = 1; i <= 20; i += 2) {
-      console.log(i);
-    }
-  };
+  for (let i = 1; i <= 20; i += 2) {
+    console.log(i);
+  }
+};
 
 /*
   Escreva uma função chamada evenUpToTwenty(). Quando a função for chamada, apresente no console 
@@ -43,9 +43,8 @@ export const oddUpToTwenty = (): void => {
 */
 
 export const evenUpToTwenty = (): void => {
-    for (let i = 0; i <= 20; i += 2) {
-      console.log(i);
-    }
-  };
+  for (let i = 0; i <= 20; i += 2) {
+    console.log(i);
+  }
+};
 
-  

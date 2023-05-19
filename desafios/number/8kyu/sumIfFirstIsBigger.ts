@@ -6,9 +6,9 @@
 */
 export const sumIfFirstIsBigger = (num1: number, num2: number): number | string => {
 
-    if(num1 > num2){
-        return num1 + num2
-    }else {
-        return "O primeiro número não é maior que o segundo!"
+    if (num1 > num2) {
+        return num1 + num2;
+    } else {
+        return "O primeiro número não é maior que o segundo!";
     }
-}
+};

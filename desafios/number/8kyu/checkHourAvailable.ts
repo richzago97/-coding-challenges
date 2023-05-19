@@ -6,8 +6,8 @@
     Caso contrário retorne "O /pergunta não está em horário de funcionamento."
 */
 export const checkHourAvailable = (inicio: number, termino: number): string => {
-    if(inicio >= 11 && termino <= 19){
+    if (inicio >= 11 && termino <= 19) {
         return "O /pergunta está em horário de funcionamento";
     }
-        return "O /pergunta não está em horário de funcionamento";
-}
+    return "O /pergunta não está em horário de funcionamento";
+};

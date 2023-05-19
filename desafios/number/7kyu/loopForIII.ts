@@ -17,29 +17,29 @@
 */
 
 export const fibonacciNumbers = (): void => {
-    let atual: number = 1;
-    let anterior: number = 0;
-  
-    for (let i = 1; i <= 15; i++) {
-      console.log(anterior);
-      const proximo = atual + anterior;
-      anterior = atual;
-      atual = proximo;
-    }
-  };
+  let atual: number = 1;
+  let anterior: number = 0;
 
-  /*
-    Escreva uma função que apresenta os valores numericos de Fibonnaci
-  */
+  for (let i = 1; i <= 15; i++) {
+    console.log(anterior);
+    const proximo = atual + anterior;
+    anterior = atual;
+    atual = proximo;
+  }
+};
+
+/*
+  Escreva uma função que apresenta os valores numericos de Fibonnaci
+*/
 
 export const fibonacci = (n: number): number[] => {
-    const sequence: number[] = [0, 1];
-    for(let i = 2; i < n; i++){
-      const num = sequence[i - 1] + sequence[i - 2];
-      sequence.push(num);
-    }
-      return sequence
-    }
+  const sequence: number[] = [0, 1];
+  for (let i = 2; i < n; i++) {
+    const num = sequence[i - 1] + sequence[i - 2];
+    sequence.push(num);
+  }
+  return sequence;
+};
 
 /*
   Escrever um programa que calcule e apresente o somatório do número de
@@ -58,14 +58,13 @@ export const fibonacci = (n: number): number[] => {
 */
 
 export const sumGrains = (): number => {
-  let totalGrains: number = 0
+  let totalGrains: number = 0;
   let grainsBoardCurrent: number = 1;
-  for(let i = 1; i <= 64; i++){
-      totalGrains += grainsBoardCurrent
-      grainsBoardCurrent *= 2
+  for (let i = 1; i <= 64; i++) {
+    totalGrains += grainsBoardCurrent;
+    grainsBoardCurrent *= 2;
   }
-  return totalGrains
-}  
-  
+  return totalGrains;
+}
 
-  
+
