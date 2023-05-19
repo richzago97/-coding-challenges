@@ -43,6 +43,7 @@ import {
     countOddPercentualValue,
     checkArraysMultiples,
 } from './desafios/array/8kyu/arraysII';
+import { pushElementsMax7String } from './desafios/array/7kyu/pushElementsMax7String';
 /*
     EXEMPLO:
 
