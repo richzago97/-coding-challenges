@@ -144,3 +144,86 @@ export const sumLastTwoPositionsMutipleOfTwo = (values: number[]): string => {
 
 
 
+/*
+    Dado o array de nomes como exemplo:
+    ⁠let nomes = ["Pedro", "Rafael", "José", "Carla", "Maria", "Josef", "Raquel"]⁠
+
+    Escreva uma função que recebe como parâmetros a lista de nomes, um nome
+    (string) e um valor inteiro (number) para representar a posição.
+
+    Acesse a lista na posição que corresponde ao valor inteiro recebido e 
+    armazene o valor contido na posição em uma variável.
+
+    Teste se o nome recebido pela função como parâmetro é o mesmo que o 
+    armazenado na variável.
+
+    Lembre-se de normalizar os dados antes de testar.
+
+    Caso os valores sejam iguais, retorne: "Acertei".
+    Caso não sejam, retorne: "Não é quem eu pensava"
+*/
+let arr_names = ["Pedro", "Rafael", "José", "Carla", "Maria", "Josef", "Raquel"]
+export const checkIfNameAlreadyExists = (name: string, pos: number): string => {
+    const pos_name = arr_names[pos]
+
+    if(pos_name === name){
+        return "Acertei"
+    }
+    return "Não é quem eu pensava"
+}
+
+/*
+    Dado dois arrays numéricos como exemplo.
+    ⁠let numeros = [1,2,3,4,5,6,10,7]
+    ⁠let outrosNumeros = [5,7,9,4,2,3,9]
+
+    Escreva uma função que recebe as duas listas de números como parâmetro. 
+    A função deve conseguir identificar qual dos dois arrays é o maior através da soma.
+
+    Após identificar o maior array, retorne o último elemento do array.
+
+    Use este formato: "A maior lista é a lista cujo 
+    último número é: x"
+*/
+
+let othersNumbers = [5,7,9,4,2,3,8]
+export const whichArrayIsBigger = (array1: number[], array2: number[]): string => {
+    let biggerArray1 = 0
+    let biggerArray2 = 0
+
+    for(let i = 0; i < numbers.length; i++){
+        biggerArray1 += numbers[i]
+    }
+    for(let i = 0; i < othersNumbers.length; i++){
+        biggerArray2 += othersNumbers[i]
+    }
+
+    if(biggerArray1 > biggerArray2){
+        return `A maior lista é a ${numbers} cujo último número é: ${array1[array1.length - 1]}`
+    }else if (biggerArray1 < biggerArray2){
+        return `A maior lista é a ${othersNumbers} cujo último número é: ${array2[array2.length - 1]}`
+    }else{
+        return "Os dois arrays têm o mesmo tamanho."
+    }
+}
+
+export const whichArrayIsBigger2 = (array1: number[], array2: number[]): string => {
+    let biggerArray1 = 0
+    let biggerArray2 = 0
+
+    array1.forEach((num) => {
+        biggerArray1 += num
+    })
+
+    array2.forEach((num) => {
+        biggerArray2 += num
+    })
+
+    if(biggerArray1 > biggerArray2){
+        return `A maior lista é a ${numbers} cujo último número é: ${array1[array1.length - 1]}`
+    }else if (biggerArray1 < biggerArray2){
+        return `A maior lista é a ${othersNumbers} cujo último número é: ${array2[array2.length - 1]}`
+    }else{
+        return "Os dois arrays têm o mesmo tamanho."
+    }
+}
