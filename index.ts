@@ -37,13 +37,15 @@ import {
     whichArrayIsBigger,
     whichArrayIsBigger2,
 } from './desafios/array/8kyu/arraysI';
+import { countEvenOdd, countEvenOdd2 } from './desafios/array/8kyu/arraysII';
 import {
-    countEvenOdd,
-    countEvenOdd2,
+    calculateSquaredList,
+    pushElementsMax7String,
+    checkCampingFeasibility,
     countOddPercentualValue,
     checkArraysMultiples,
-} from './desafios/array/8kyu/arraysII';
-import { pushElementsMax7String } from './desafios/array/7kyu/pushElementsMax7String';
+} from './desafios/array/7kyu/arraysI';
+
 /*
     EXEMPLO:
 
