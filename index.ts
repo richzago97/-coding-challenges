@@ -45,7 +45,7 @@ import {
     countOddPercentualValue,
     checkArraysMultiples,
 } from './desafios/array/7kyu/arraysI';
-
+import { get_age } from './desafios/string/8kyu/codewarsI';
 /*
     EXEMPLO:
 
