@@ -1,16 +1,27 @@
 /*
-    Parse nice int from char problem
+    If you can't sleep, just count sheep!!
 
-    You ask a small girl,"How old are you?" She always says, "x years old", 
-    where x is a random number between 0 and 9.
-
-    Write a program that returns the girl's age (0-9) as an integer.
-
-    Assume the test input string is always a valid string. For example, the test 
-    input may be "1 year old" or "5 years old". The first character in the string 
-    is always a number.
+    Task:
+    Given a non-negative integer, 3 for example, return a string with a murmur:
+    "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative 
+    integers.
 */
 
-export function get_age(age: string): number {
-    return Number(age[0]);
+export function countSheep(num: number): string {
+    let result: string = '';
+    for (let i = 1; i <= num; i++) {
+        result += `${i} sheep...`;
+    }
+
+    return result;
 }
+
+/* 
+    Write a function to split a string and convert 
+    it into an array of words.
+*/
+export function stringToArray(s: string): string[] {
+    return s.split(' ');
+}
+
+
