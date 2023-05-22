@@ -89,3 +89,63 @@ export function squareSum(numbers: number[]): number {
 
     return result;
 }
+
+/*
+    Write a function that takes an array of numbers and returns the sum of the numbers.
+     The numbers can be negative or non-integer. 
+     If the array does not contain any numbers then you should 
+     return 0.
+*/
+
+function sum(numbers: number[]): number {
+    return numbers.reduce((acc, currentValue) => acc + currentValue, 0);
+}
+
+function sum2(numbers: number[]): number {
+    let result = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        result += numbers[i];
+    }
+    return result;
+}
+
+/*
+    
+    Find Maximum and Minimum Values of a List
+
+    Your task is to make two functions ( max and min, or maximum and minimum, etc., 
+    depending on the language ) that receive a list of integers as input, and return 
+    the largest and lowest number in that list, respectively.
+*/
+
+export const min = (list: number[]): number => {
+    let result = list.reduce((acc, cv) => Math.min(acc, cv));
+    return result;
+};
+
+export const max = (list: number[]): number => {
+    let result = list.reduce((acc, cv) => Math.max(acc, cv));
+    return result;
+};
+
+export const min2 = (list: number[]): number => {
+    let lessValue = list[0];
+    // let lessValue = Infinity;
+    for (let i = 0; i < list.length; i++) {
+        if (list[i] < lessValue) {
+            lessValue = list[i];
+        }
+    }
+    return lessValue;
+};
+
+export const max2 = (list: number[]): number => {
+    let biggerValue = list[0];
+    //let BiggerValue = -Infinity
+    for (let i = 0; i < list.length; i++) {
+        if (list[i] > biggerValue) {
+            biggerValue = list[i];
+        }
+    }
+    return biggerValue;
+};
