@@ -60,6 +60,9 @@ import {
     maps,
     positiveSum,
     positivSum2,
+    squareSum,
+    squareSum2,
+    countPositivesSumNegatives,
 } from './desafios/array/8kyu/codewarsI';
 /*
     EXEMPLO:
