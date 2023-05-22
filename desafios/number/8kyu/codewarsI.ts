@@ -63,3 +63,18 @@ export const summation = (num: number) => {
     }
     return sum;
 };
+
+/*
+    This kata is about multiplying a given number by eight if it is an even number 
+    and by nine otherwise.
+*/
+
+export function simpleMultiplication(num: number): number {
+    let result: number = 0;
+    if (num % 2 === 0) {
+        result = num * 8;
+    } else if (num % 2 === 1) {
+        return (result = num * 9);
+    }
+    return result;
+}
