@@ -63,6 +63,10 @@ import {
     squareSum,
     squareSum2,
     countPositivesSumNegatives,
+    max,
+    max2,
+    min,
+    min2,
 } from './desafios/array/8kyu/codewarsI';
 /*
     EXEMPLO:
