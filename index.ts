@@ -17,9 +17,20 @@ import {
     sumFirstHundredNumbers,
 } from './desafios/number/8kyu/loopForII';
 
+import {
+    get_age,
+    powersOfTwo,
+    oddCount,
+} from './desafios/number/8kyu/codewarsI';
+
 //strings
-import { isPalindromo } from './desafios/string/7kyu/isPalindromo';
+import {
+    isPalindrome,
+    isPalindrome2,
+    isPalindrome3,
+} from './desafios/string/7kyu/isPalindrome';
 import { startsWithLetter } from './desafios/string/8kyu/startsWithLetter';
+import { countSheep, stringToArray } from './desafios/string/8kyu/codewarsI';
 
 //arrays
 import {
@@ -45,7 +56,11 @@ import {
     countOddPercentualValue,
     checkArraysMultiples,
 } from './desafios/array/7kyu/arraysI';
-import { get_age } from './desafios/string/8kyu/codewarsI';
+import {
+    maps,
+    positiveSum,
+    positivSum2,
+} from './desafios/array/8kyu/codewarsI';
 /*
     EXEMPLO:
 
