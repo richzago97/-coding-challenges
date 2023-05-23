@@ -39,6 +39,8 @@ import {
     countSheep,
     stringToArray,
     areYouPlayingBanjo,
+    fixTheMeerkat,
+    fakeBin,
 } from './desafios/string/8kyu/codewarsI';
 
 //arrays
