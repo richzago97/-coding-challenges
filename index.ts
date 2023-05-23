@@ -21,6 +21,11 @@ import {
     get_age,
     powersOfTwo,
     oddCount,
+    calculateAge,
+    simpleMultiplication,
+    sixToast,
+    sixToast2,
+    summation,
 } from './desafios/number/8kyu/codewarsI';
 
 //strings
