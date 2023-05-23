@@ -24,4 +24,9 @@ export function stringToArray(s: string): string[] {
     return s.split(' ');
 }
 
-
+export function areYouPlayingBanjo(name: string): string {
+    let nameLower = name[0].toLocaleLowerCase();
+    return nameLower == 'r'
+        ? `${name} plays banjo`
+        : `${name} does not play banjo`;
+}
