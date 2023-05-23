@@ -76,6 +76,7 @@ import {
     max2,
     min,
     min2,
+    monkeyCount,
 } from './desafios/array/8kyu/codewarsI';
 /*
     EXEMPLO:
