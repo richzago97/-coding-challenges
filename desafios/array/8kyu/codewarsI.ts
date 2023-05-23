@@ -170,3 +170,42 @@ export function monkeyCount(n: number): number[] {
     }
     return result;
 }
+
+/*
+    DESCRIPTION:
+    Write a method, that will get an integer array as parameter and will process every number 
+    from this array.
+
+    Return a new array with processing every number of the input-array like this:
+
+    If the number has an integer square root, take this, otherwise square the number.
+
+    Example
+    [4,3,9,7,2,1] -> [2,9,3,49,4,1]
+    Notes
+    The input array will always contain only positive numbers, and will 
+    never be empty or null.
+*/
+
+export function squareOrSquareRoot(array: number[]): number[] {
+    let result: number[] = [];
+
+    for (let i = 0; i < array.length; i++) {
+        let root = Math.sqrt(array[i]);
+
+        if (root % 1 === 0) {
+            result.push(root);
+        } else {
+            let square = array[i] * array[i];
+            result.push(square);
+        }
+    }
+
+    return result;
+}
+
+export const squareOrSquareRoot2 = (array: number[]): number[] => {
+    return array.map((elem) =>
+        Math.sqrt(elem) % 1 == 0 ? Math.sqrt(elem) : elem * elem
+    );
+};
