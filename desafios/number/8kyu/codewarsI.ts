@@ -78,3 +78,84 @@ export function simpleMultiplication(num: number): number {
     }
     return result;
 }
+
+/*
+    Story:
+        You are going to make toast fast, you think that you should make multiple pieces of 
+        toasts and once. So, you try to make 6 pieces of toast.
+
+    Problem:
+        You forgot to count the number of toast you put into there, you don't know if you 
+        put exactly six pieces of toast into the toasters.
+
+        Define a function that counts how many more (or less) pieces of toast you need in 
+        the toasters. Even though you need more or less, the number will still be positive,
+         not negative.
+
+    Examples:
+        You must return the number of toast the you need to put in (or to take out). In case of 5
+         you can still put 1 toast in:
+
+        six_toast(5) == 1
+        And in case of 12 you need 6 toasts less (but not -6):
+
+        six_toast(12) == 6
+*/
+
+export function sixToast(num: number): number {
+    if (num < 6) {
+        return 6 - num;
+    }
+    return num - 6;
+}
+
+export function sixToast2(num: number): number {
+    return Math.abs(num - 6);
+}
+
+/*
+    Philip's just turned four and he wants to know how old he will be in various 
+    years in the future such as 2090 or 3044. His parents can't keep up calculating 
+    this so they've begged you to help them out by writing a programme that can answer 
+    Philip's endless questions.
+
+    Your task is to write a function that takes two parameters: the year of birth and 
+    the year to count years in relation to. As Philip is getting more curious every day 
+    he may soon want to know how many years it was until he would be born, so your function 
+    needs to work with both dates in the future and in the past.
+
+    Provide output in this format: For dates in the future: "You are ... year(s) old." 
+    For dates in the past: "You will be born in ... year(s)." If the year of birth equals 
+    the year requested return: "You were born this very year!"
+
+    "..." are to be replaced by the number, followed and proceeded by a single space. 
+    Mind that you need to account for both "year" and "years", depending on the result.
+
+    Good Luck!
+*/
+
+export function calculateAge(birthDate: number, year: number): string | void {
+    let sumYear = 0;
+
+    if (birthDate === year) {
+        return 'You were born this very year!';
+    }
+
+    if (birthDate > year) {
+        sumYear = birthDate - year;
+        if (sumYear === 1) {
+            return `You will be born in ${sumYear} year.`;
+        }
+
+        return `You will be born in ${sumYear} years.`;
+    }
+
+    if (birthDate < year) {
+        sumYear = year - birthDate;
+
+        if (sumYear === 1) {
+            return `You are ${sumYear} year old.`;
+        }
+        return `You are ${sumYear} years old.`;
+    }
+}
