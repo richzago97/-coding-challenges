@@ -30,7 +30,11 @@ import {
     isPalindrome3,
 } from './desafios/string/7kyu/isPalindrome';
 import { startsWithLetter } from './desafios/string/8kyu/startsWithLetter';
-import { countSheep, stringToArray } from './desafios/string/8kyu/codewarsI';
+import {
+    countSheep,
+    stringToArray,
+    areYouPlayingBanjo,
+} from './desafios/string/8kyu/codewarsI';
 
 //arrays
 import {
