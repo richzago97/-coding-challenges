@@ -27,6 +27,7 @@ import {
     sixToast2,
     summation,
 } from './desafios/number/8kyu/codewarsI';
+import { cookingTime } from './desafios/number/7kyu/codewarsI';
 
 //strings
 import {
