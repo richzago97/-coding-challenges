@@ -77,6 +77,8 @@ import {
     min,
     min2,
     monkeyCount,
+    squareOrSquareRoot,
+    squareOrSquareRoot2,
 } from './desafios/array/8kyu/codewarsI';
 /*
     EXEMPLO:
