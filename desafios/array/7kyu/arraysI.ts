@@ -13,12 +13,12 @@ const array_a = [1, 2, 3, 4, 5, 6, 7, 8, 10, 12, 15, 20, 14, 15, 18];
 let array_b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 export const calculateSquaredList = (list_a: number[], list_b: number[]) => {
     if (list_a.length !== 15) {
-        return 'A lista a deve ter exatamente 15 elementos inteiros';
+        return "A lista a deve ter exatamente 15 elementos inteiros";
     }
 
     for (let i = 0; i < list_a.length; i++) {
         if (list_a[i] < 0) {
-            return 'A lista a deve ter exatamente 15 elementos inteiros';
+            return "A lista a deve ter exatamente 15 elementos inteiros";
         }
 
         list_b.push(list_a[i] ** 2);
@@ -47,19 +47,19 @@ export const pushElementsMax7String = (
     for (let i = 0; i < newElements.length; i++) {
         const newElement = newElements[i];
 
-        if (typeof newElement === 'string' && newElement.length > 7) {
-            return 'Elemento com mais de 7 caracteres não é permitido';
+        if (typeof newElement === "string" && newElement.length > 7) {
+            return "Elemento com mais de 7 caracteres não é permitido";
         }
 
         if (list.length >= 10) {
-            return 'Não é possível inserir o valor em uma lista com mais de 10 elementos';
+            return "Não é possível inserir o valor em uma lista com mais de 10 elementos";
         }
 
         list.push(newElement);
     }
 
     return `Elemento(s) inserido(s) com sucesso, a lista agora é: ${list.join(
-        ', '
+        ", "
     )}`;
 };
 
@@ -95,40 +95,40 @@ export const checkCampingFeasibility = (): string => {
     let supplyBoxOld: string[][] = [];
 
     let hygiene: string[] = [
-        'Soap',
-        'Toothbrush',
-        'Toothpaste',
-        'Shampoo',
-        'Towel',
+        "Soap",
+        "Toothbrush",
+        "Toothpaste",
+        "Shampoo",
+        "Towel",
     ];
     let food: string[] = [
-        'Bread',
-        'Salt Bread',
-        'Sausage',
-        'Water',
-        'Tomato Sauce',
+        "Bread",
+        "Salt Bread",
+        "Sausage",
+        "Water",
+        "Tomato Sauce",
     ];
     let pharmacy: string[] = [
-        'Analgesic',
-        'Bandage',
-        'Antiseptic',
-        'Thermometer',
-        'Gaze',
+        "Analgesic",
+        "Bandage",
+        "Antiseptic",
+        "Thermometer",
+        "Gaze",
     ];
-    let leisure: string[] = ['Ball', 'Deck', 'Jump Rope', 'Sunglasses', 'Book'];
+    let leisure: string[] = ["Ball", "Deck", "Jump Rope", "Sunglasses", "Book"];
 
     let supplyBox: string[][] = [hygiene, food, pharmacy, leisure];
 
     // supplyBoxOld = supplyBoxOld.concat(hygiene, food, pharmacy, leisure);
 
     if (supplyBox.length < 4) {
-        console.log('Algum amigo ainda não retornou com os itens.');
-        return 'Não podemos ir acampar.';
+        console.log("Algum amigo ainda não retornou com os itens.");
+        return "Não podemos ir acampar.";
     }
 
     if (supplyBox.length > 4) {
-        console.log('Acho que temos um intruso.');
-        return 'Não podemos ir acampar.';
+        console.log("Acho que temos um intruso.");
+        return "Não podemos ir acampar.";
     }
 
     if (supplyBox.length === 4) {
@@ -139,7 +139,7 @@ export const checkCampingFeasibility = (): string => {
                         i + 1
                     }, não precisamos de tantos. Máximo 5.`
                 );
-                return 'Não podemos ir acampar.';
+                return "Não podemos ir acampar.";
             }
 
             if (supplyBox[i].length < 5) {
@@ -148,12 +148,12 @@ export const checkCampingFeasibility = (): string => {
                         i + 1
                     }. O certo é 5 itens.`
                 );
-                return 'Não podemos ir acampar.';
+                return "Não podemos ir acampar.";
             }
         }
     }
 
-    return 'Podemos acampar!';
+    return "Podemos acampar!";
 };
 
 // console.log(checkCampingFeasibility());
@@ -194,7 +194,7 @@ const list_b_checkarrays = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50];
 
 export const checkArraysMultiples = (list1: number[], list2: number[]) => {
     if (list1.length !== 10 || list2.length !== 10) {
-        return 'Lista fora dos padrões necessários, devem ser 10 números em cada lista.';
+        return "Lista fora dos padrões necessários, devem ser 10 números em cada lista.";
     }
 
     for (let i = 0; i < list1.length; i++) {
@@ -209,7 +209,7 @@ export const checkArraysMultiples = (list1: number[], list2: number[]) => {
         }
     }
 
-    return 'Sucesso.';
+    return "Sucesso.";
 };
 
 // console.log(checkArraysMultiples(lista_checkarrays, list_b_checkarrays));
