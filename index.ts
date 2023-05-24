@@ -90,6 +90,10 @@ import {
     squareOrSquareRoot,
     squareOrSquareRoot2,
 } from "./desafios/array/8kyu/codewarsI";
+
+//arrays object
+
+import { outed } from "./desafios/array/object/7kyu/codewarsI";
 /*
     EXEMPLO:
 
