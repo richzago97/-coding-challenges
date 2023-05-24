@@ -60,32 +60,3 @@ export const fakeBin = (x: string): string => {
 
     return result;
 };
-
-export const getCount = (str: string): number => {
-    let count = 0;
-    for (let i = 0; i < str.length; i++) {
-        if (
-            str[i] == "a" ||
-            str[i] == "e" ||
-            str[i] == "i" ||
-            str[i] == "o" ||
-            str[i] == "u"
-        ) {
-            count++;
-        }
-    }
-    return count;
-};
-
-export const getCount2 = (str: string): number => {
-    let count = 0;
-    let vowels = ["a", "e", "i", "o", "u"];
-
-    for (let i = 0; i < str.length; i++) {
-        if (vowels.includes(str[i])) {
-            count++;
-        }
-    }
-
-    return count;
-};
