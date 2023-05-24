@@ -138,7 +138,7 @@ export function calculateAge(birthDate: number, year: number): string | void {
     let sumYear = 0;
 
     if (birthDate === year) {
-        return 'You were born this very year!';
+        return "You were born this very year!";
     }
 
     if (birthDate > year) {
@@ -159,3 +159,18 @@ export function calculateAge(birthDate: number, year: number): string | void {
         return `You are ${sumYear} years old.`;
     }
 }
+
+/*
+    You are given two interior angles (in degrees) of a triangle.
+
+    Write a function to return the 3rd.
+
+    Note: only positive integers will be tested.
+*/
+
+export const otherAngle = (a: number, b: number): number => {
+    let sum = a + b;
+    let sub = 180 - sum;
+
+    return sub;
+};
