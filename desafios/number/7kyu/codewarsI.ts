@@ -25,8 +25,5 @@
 */
 
 export function cookingTime(eggs: number): number {
-    let repeat = eggs / 8;
-    let totalTime = repeat * 8;
-
-    return totalTime;
+    return Math.ceil(eggs / 8) * 5;
 }
