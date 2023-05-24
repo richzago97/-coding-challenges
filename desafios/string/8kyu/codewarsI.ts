@@ -8,7 +8,7 @@
 */
 
 export function countSheep(num: number): string {
-    let result: string = '';
+    let result: string = "";
     for (let i = 1; i <= num; i++) {
         result += `${i} sheep...`;
     }
@@ -21,12 +21,12 @@ export function countSheep(num: number): string {
     it into an array of words.
 */
 export function stringToArray(s: string): string[] {
-    return s.split(' ');
+    return s.split(" ");
 }
 
 export function areYouPlayingBanjo(name: string): string {
     let nameLower = name[0].toLocaleLowerCase();
-    return nameLower == 'r'
+    return nameLower == "r"
         ? `${name} plays banjo`
         : `${name} does not play banjo`;
 }
@@ -49,14 +49,43 @@ export function fixTheMeerkat(arr: string[]): string[] {
 }
 
 export const fakeBin = (x: string): string => {
-    let result = '';
+    let result = "";
     for (let i = 0; i < x.length; i++) {
-        if (x[i] < '5') {
-            result += '0';
-        } else if (x[i] >= '5') {
-            result += '1';
+        if (x[i] < "5") {
+            result += "0";
+        } else if (x[i] >= "5") {
+            result += "1";
         }
     }
 
     return result;
+};
+
+export const getCount = (str: string): number => {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (
+            str[i] == "a" ||
+            str[i] == "e" ||
+            str[i] == "i" ||
+            str[i] == "o" ||
+            str[i] == "u"
+        ) {
+            count++;
+        }
+    }
+    return count;
+};
+
+export const getCount2 = (str: string): number => {
+    let count = 0;
+    let vowels = ["a", "e", "i", "o", "u"];
+
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            count++;
+        }
+    }
+
+    return count;
 };
