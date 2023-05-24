@@ -42,9 +42,14 @@ import {
     areYouPlayingBanjo,
     fixTheMeerkat,
     fakeBin,
+} from "./desafios/string/8kyu/codewarsI";
+
+import {
     getCount,
     getCount2,
-} from "./desafios/string/8kyu/codewarsI";
+    disemvowel,
+    disemvowel2,
+} from "./desafios/string/7kyu/codewarsI";
 
 //arrays
 import {
