@@ -26,6 +26,7 @@ import {
     sixToast,
     sixToast2,
     summation,
+    twiceAsOld
 } from "./desafios/number/8kyu/codewarsI";
 import { cookingTime, fuelPrice } from "./desafios/number/7kyu/codewarsI";
 
