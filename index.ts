@@ -27,6 +27,7 @@ import {
     sixToast2,
     summation,
     twiceAsOld,
+    makeNegative,
 } from "./desafios/number/8kyu/codewarsI";
 import { cookingTime, fuelPrice } from "./desafios/number/7kyu/codewarsI";
 
@@ -44,7 +45,7 @@ import {
     fixTheMeerkat,
     fakeBin,
     checkForFactor,
-    booleanToString
+    booleanToString,
 } from "./desafios/string/8kyu/codewarsI";
 
 import {
