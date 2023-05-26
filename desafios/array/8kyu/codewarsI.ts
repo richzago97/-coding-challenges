@@ -229,3 +229,22 @@ export function sumMix(x: any[]): number {
 }
 
 console.log(sumMix([9, 3, "7", "3"]));
+
+/*
+    Given a non-empty array of integers, return the result of multiplying the 
+    values together in order. Example:
+
+    [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+*/
+
+export function grow(arr: number[]): number {
+    return arr.reduce((acc, currentValue) => acc * currentValue);
+}
+
+export function grow2(arr: number[]): number {
+    let result: number = 1;
+    for (let i = 0; i < arr.length; i++) {
+        result *= arr[i];
+    }
+    return result;
+}
