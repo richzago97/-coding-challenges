@@ -98,6 +98,7 @@ import {
     sumMix,
     grow,
     grow2,
+    check,
 } from "./desafios/array/8kyu/codewarsI";
 
 //arrays object
