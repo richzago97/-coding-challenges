@@ -28,6 +28,8 @@ import {
     summation,
     twiceAsOld,
     makeNegative,
+    otherAngle,
+    rentalCarCost
 } from "./desafios/number/8kyu/codewarsI";
 import { cookingTime, fuelPrice } from "./desafios/number/7kyu/codewarsI";
 
@@ -93,6 +95,7 @@ import {
     monkeyCount,
     squareOrSquareRoot,
     squareOrSquareRoot2,
+    sumMix,
 } from "./desafios/array/8kyu/codewarsI";
 
 //arrays object
