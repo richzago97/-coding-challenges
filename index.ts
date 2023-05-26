@@ -26,7 +26,7 @@ import {
     sixToast,
     sixToast2,
     summation,
-    twiceAsOld
+    twiceAsOld,
 } from "./desafios/number/8kyu/codewarsI";
 import { cookingTime, fuelPrice } from "./desafios/number/7kyu/codewarsI";
 
@@ -43,6 +43,7 @@ import {
     areYouPlayingBanjo,
     fixTheMeerkat,
     fakeBin,
+    checkForFactor,
 } from "./desafios/string/8kyu/codewarsI";
 
 import {
