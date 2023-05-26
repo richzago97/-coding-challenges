@@ -44,6 +44,7 @@ import {
     fixTheMeerkat,
     fakeBin,
     checkForFactor,
+    booleanToString
 } from "./desafios/string/8kyu/codewarsI";
 
 import {
