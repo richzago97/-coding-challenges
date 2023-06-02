@@ -25,7 +25,7 @@
 */
 
 export function cookingTime(eggs: number): number {
-    return Math.ceil(eggs / 8) * 5;
+   return Math.ceil(eggs / 8) * 5;
 }
 
 /*
@@ -47,18 +47,45 @@ export function cookingTime(eggs: number): number {
 */
 
 export const fuelPrice = (litres: number, pricePerLitre: number): number => {
-    let totalCost = litres * pricePerLitre;
-    let discount = 0;
+   let totalCost = litres * pricePerLitre;
+   let discount = 0;
 
-    if (litres >= 10) {
-        discount = 0.25;
-    } else {
-        discount = Math.floor(litres / 2) * 0.05;
-    }
+   if (litres >= 10) {
+      discount = 0.25;
+   } else {
+      discount = Math.floor(litres / 2) * 0.05;
+   }
 
-    totalCost = (pricePerLitre - discount) * litres;
+   totalCost = (pricePerLitre - discount) * litres;
 
-    totalCost = parseFloat(totalCost.toFixed(2));
+   totalCost = parseFloat(totalCost.toFixed(2));
 
-    return totalCost;
+   return totalCost;
 };
+
+/*
+    Return an array containing the numbers from 1 to N, where N is the parametered value.
+
+    Replace certain values however if any of the following conditions are met:
+
+    If the value is a multiple of 3: use the value "Fizz" instead
+    If the value is a multiple of 5: use the value "Buzz" instead
+    If the value is a multiple of 3 & 5: use the value "FizzBuzz" instead
+    N will never be less than 1.
+*/
+
+export function fizzbuzz(n: number) {
+   let result: Array<string | number> = [];
+   for (let i = 1; i <= n; i++) {
+      if (i % 3 === 0 && i % 5 === 0) {
+         result.push("FizzBuzz");
+      } else if (i % 3 === 0) {
+         result.push("Fizz");
+      } else if (i % 5 === 0) {
+         result.push("Buzz");
+      } else {
+         result.push(i);
+      }
+   }
+   return result;
+}
