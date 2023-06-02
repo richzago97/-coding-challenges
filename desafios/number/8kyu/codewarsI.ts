@@ -12,7 +12,7 @@
 */
 
 export function get_age(age: string): number {
-    return Number(age[0]);
+   return Number(age[0]);
 }
 
 /*
@@ -27,13 +27,13 @@ export function get_age(age: string): number {
 */
 
 export function powersOfTwo(n: number): number[] {
-    let result: number[] = [];
-    for (let i = 0; i <= n; i++) {
-        result.push(2 ** i);
-        //result.push(Math.pow(2, i));
-    }
+   let result: number[] = [];
+   for (let i = 0; i <= n; i++) {
+      result.push(2 ** i);
+      //result.push(Math.pow(2, i));
+   }
 
-    return result;
+   return result;
 }
 
 /* 
@@ -44,9 +44,9 @@ export function powersOfTwo(n: number): number[] {
 */
 
 export function oddCount(n: number): number {
-    const result = Math.floor(n / 2);
-    // const result = ~~(n / 2);
-    return result;
+   const result = Math.floor(n / 2);
+   // const result = ~~(n / 2);
+   return result;
 }
 
 /*
@@ -57,11 +57,11 @@ export function oddCount(n: number): number {
 */
 
 export const summation = (num: number) => {
-    let sum = 0;
-    for (let i = 0; i <= num; i++) {
-        sum += i;
-    }
-    return sum;
+   let sum = 0;
+   for (let i = 0; i <= num; i++) {
+      sum += i;
+   }
+   return sum;
 };
 
 /*
@@ -70,13 +70,13 @@ export const summation = (num: number) => {
 */
 
 export function simpleMultiplication(num: number): number {
-    let result: number = 0;
-    if (num % 2 === 0) {
-        result = num * 8;
-    } else if (num % 2 === 1) {
-        return (result = num * 9);
-    }
-    return result;
+   let result: number = 0;
+   if (num % 2 === 0) {
+      result = num * 8;
+   } else if (num % 2 === 1) {
+      return (result = num * 9);
+   }
+   return result;
 }
 
 /*
@@ -103,14 +103,14 @@ export function simpleMultiplication(num: number): number {
 */
 
 export function sixToast(num: number): number {
-    if (num < 6) {
-        return 6 - num;
-    }
-    return num - 6;
+   if (num < 6) {
+      return 6 - num;
+   }
+   return num - 6;
 }
 
 export function sixToast2(num: number): number {
-    return Math.abs(num - 6);
+   return Math.abs(num - 6);
 }
 
 /*
@@ -135,29 +135,29 @@ export function sixToast2(num: number): number {
 */
 
 export function calculateAge(birthDate: number, year: number): string | void {
-    let sumYear = 0;
+   let sumYear = 0;
 
-    if (birthDate === year) {
-        return "You were born this very year!";
-    }
+   if (birthDate === year) {
+      return "You were born this very year!";
+   }
 
-    if (birthDate > year) {
-        sumYear = birthDate - year;
-        if (sumYear === 1) {
-            return `You will be born in ${sumYear} year.`;
-        }
+   if (birthDate > year) {
+      sumYear = birthDate - year;
+      if (sumYear === 1) {
+         return `You will be born in ${sumYear} year.`;
+      }
 
-        return `You will be born in ${sumYear} years.`;
-    }
+      return `You will be born in ${sumYear} years.`;
+   }
 
-    if (birthDate < year) {
-        sumYear = year - birthDate;
+   if (birthDate < year) {
+      sumYear = year - birthDate;
 
-        if (sumYear === 1) {
-            return `You are ${sumYear} year old.`;
-        }
-        return `You are ${sumYear} years old.`;
-    }
+      if (sumYear === 1) {
+         return `You are ${sumYear} year old.`;
+      }
+      return `You are ${sumYear} years old.`;
+   }
 }
 
 /*
@@ -169,10 +169,10 @@ export function calculateAge(birthDate: number, year: number): string | void {
 */
 
 export const otherAngle = (a: number, b: number): number => {
-    let sum = a + b;
-    let sub = 180 - sum;
+   let sum = a + b;
+   let sub = 180 - sum;
 
-    return sub;
+   return sub;
 };
 
 /*
@@ -187,9 +187,9 @@ export const otherAngle = (a: number, b: number): number => {
 */
 
 export function twiceAsOld(dadYearsOld: number, sonYearsOld: number): number {
-    const ageDifference = Math.abs(dadYearsOld - 2 * sonYearsOld);
+   const ageDifference = Math.abs(dadYearsOld - 2 * sonYearsOld);
 
-    return ageDifference;
+   return ageDifference;
 }
 
 /*
@@ -207,10 +207,10 @@ export function twiceAsOld(dadYearsOld: number, sonYearsOld: number): number {
 */
 
 export const makeNegative = (num: number): number => {
-    if (num > 0) {
-        return -num;
-    }
-    return num;
+   if (num > 0) {
+      return -num;
+   }
+   return num;
 };
 
 /*
@@ -229,14 +229,34 @@ export const makeNegative = (num: number): number => {
 */
 
 export function rentalCarCost(d: number): number {
-    let rentPrice = 40;
+   let rentPrice = 40;
 
-    if (d < 3) {
-        return rentPrice * d;
-    }
+   if (d < 3) {
+      return rentPrice * d;
+   }
 
-    if (d >= 3 && d <= 6) {
-        return rentPrice * d - 20;
-    }
-    return rentPrice * d - 50;
+   if (d >= 3 && d <= 6) {
+      return rentPrice * d - 20;
+   }
+   return rentPrice * d - 50;
+}
+
+/*
+    Create a function with two arguments that will return an array of the 
+    first n multiples of x.
+
+    Assume both the given number and the number of times to 
+    count will be positive numbers greater than 0.
+
+    Return the results as an array or list ( depending on language ).
+*/
+
+export function countBy(x: number, n: number): number[] {
+   let result: number[] = [];
+
+   for (let i = 1; i <= n; i++) {
+      result.push(x * i);
+   }
+
+   return result;
 }
