@@ -32,7 +32,11 @@ import {
    rentalCarCost,
    countBy,
 } from "./desafios/number/8kyu/codewarsI";
-import { cookingTime, fuelPrice } from "./desafios/number/7kyu/codewarsI";
+import {
+   cookingTime,
+   fuelPrice,
+   fizzbuzz,
+} from "./desafios/number/7kyu/codewarsI";
 
 //strings
 import {
