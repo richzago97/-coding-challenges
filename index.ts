@@ -1,104 +1,105 @@
 //numbers
 import {
-    fibonacciNumbers,
-    fibonacci,
-    sumGrains,
+   fibonacciNumbers,
+   fibonacci,
+   sumGrains,
 } from "./desafios/number/7kyu/loopForIII";
 import { checkHourAvailable } from "./desafios/number/8kyu/checkHourAvailable";
 import { isBigger, isBigger2 } from "./desafios/number/8kyu/isBigger";
 import {
-    isPositiveOrNegative,
-    isPostiveOrNegative2,
+   isPositiveOrNegative,
+   isPostiveOrNegative2,
 } from "./desafios/number/8kyu/isPositveOrNegative";
 import {
-    squareIntegers,
-    calculateSumAndAverage,
-    numbersDivisibleByFour,
-    sumFirstHundredNumbers,
+   squareIntegers,
+   calculateSumAndAverage,
+   numbersDivisibleByFour,
+   sumFirstHundredNumbers,
 } from "./desafios/number/8kyu/loopForII";
 
 import {
-    get_age,
-    powersOfTwo,
-    oddCount,
-    calculateAge,
-    simpleMultiplication,
-    sixToast,
-    sixToast2,
-    summation,
-    twiceAsOld,
-    makeNegative,
-    otherAngle,
-    rentalCarCost,
+   get_age,
+   powersOfTwo,
+   oddCount,
+   calculateAge,
+   simpleMultiplication,
+   sixToast,
+   sixToast2,
+   summation,
+   twiceAsOld,
+   makeNegative,
+   otherAngle,
+   rentalCarCost,
+   countBy,
 } from "./desafios/number/8kyu/codewarsI";
 import { cookingTime, fuelPrice } from "./desafios/number/7kyu/codewarsI";
 
 //strings
 import {
-    isPalindrome,
-    isPalindrome2,
-    isPalindrome3,
+   isPalindrome,
+   isPalindrome2,
+   isPalindrome3,
 } from "./desafios/string/7kyu/isPalindrome";
 import { startsWithLetter } from "./desafios/string/8kyu/startsWithLetter";
 import {
-    countSheep,
-    stringToArray,
-    areYouPlayingBanjo,
-    fixTheMeerkat,
-    fakeBin,
-    checkForFactor,
-    booleanToString,
+   countSheep,
+   stringToArray,
+   areYouPlayingBanjo,
+   fixTheMeerkat,
+   fakeBin,
+   checkForFactor,
+   booleanToString,
 } from "./desafios/string/8kyu/codewarsI";
 
 import {
-    getCount,
-    getCount2,
-    disemvowel,
-    disemvowel2,
+   getCount,
+   getCount2,
+   disemvowel,
+   disemvowel2,
 } from "./desafios/string/7kyu/codewarsI";
 
 //arrays
 import {
-    myArrMinFive,
-    myArrMinFive2,
-    checkPositionExists,
-    checkPositionExists2,
-    checkPositionExists3,
-    isPositionEvenOrOdd,
-    isPositionEvenOrOdd2,
-    checkBiggerName,
-    checkBiggerName2,
-    sumLastTwoPositionsMutipleOfTwo,
-    checkIfNameAlreadyExists,
-    whichArrayIsBigger,
-    whichArrayIsBigger2,
+   myArrMinFive,
+   myArrMinFive2,
+   checkPositionExists,
+   checkPositionExists2,
+   checkPositionExists3,
+   isPositionEvenOrOdd,
+   isPositionEvenOrOdd2,
+   checkBiggerName,
+   checkBiggerName2,
+   sumLastTwoPositionsMutipleOfTwo,
+   checkIfNameAlreadyExists,
+   whichArrayIsBigger,
+   whichArrayIsBigger2,
 } from "./desafios/array/8kyu/arraysI";
 import { countEvenOdd, countEvenOdd2 } from "./desafios/array/8kyu/arraysII";
 import {
-    calculateSquaredList,
-    pushElementsMax7String,
-    checkCampingFeasibility,
-    countOddPercentualValue,
-    checkArraysMultiples,
+   calculateSquaredList,
+   pushElementsMax7String,
+   checkCampingFeasibility,
+   countOddPercentualValue,
+   checkArraysMultiples,
 } from "./desafios/array/7kyu/arraysI";
 import {
-    maps,
-    positiveSum,
-    positivSum2,
-    squareSum,
-    squareSum2,
-    countPositivesSumNegatives,
-    max,
-    max2,
-    min,
-    min2,
-    monkeyCount,
-    squareOrSquareRoot,
-    squareOrSquareRoot2,
-    sumMix,
-    grow,
-    grow2,
-    check,
+   maps,
+   positiveSum,
+   positivSum2,
+   squareSum,
+   squareSum2,
+   countPositivesSumNegatives,
+   max,
+   max2,
+   min,
+   min2,
+   monkeyCount,
+   squareOrSquareRoot,
+   squareOrSquareRoot2,
+   sumMix,
+   grow,
+   grow2,
+   check,
 } from "./desafios/array/8kyu/codewarsI";
 
 //arrays object
