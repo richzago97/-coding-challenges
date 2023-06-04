@@ -36,7 +36,8 @@ import {
    cookingTime,
    fuelPrice,
    fizzbuzz,
-   gimme
+   gimme,
+   strongNumber,
 } from "./desafios/number/7kyu/codewarsI";
 
 //strings
