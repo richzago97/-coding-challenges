@@ -122,3 +122,21 @@ export function gimme(triplet: number[]): number {
       return 2;
    }
 }
+
+export const strongNumber = (num: number) => {
+   const numStr: string = num.toString();
+   let sum = 0;
+
+   for (let i = 0; i < numStr.length; i++) {
+      const digit = parseInt(numStr[i]);
+      let factorial = 1;
+
+      for (let j = 2; j <= digit; j++) {
+         factorial *= j;
+      }
+
+      sum += factorial;
+   }
+
+   return sum === num ? "STRONG!!!!" : "Not Strong !!";
+};
