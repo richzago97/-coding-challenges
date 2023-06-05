@@ -8,12 +8,12 @@
 */
 
 export function countSheep(num: number): string {
-    let result: string = "";
-    for (let i = 1; i <= num; i++) {
-        result += `${i} sheep...`;
-    }
+   let result: string = "";
+   for (let i = 1; i <= num; i++) {
+      result += `${i} sheep...`;
+   }
 
-    return result;
+   return result;
 }
 
 /* 
@@ -21,14 +21,14 @@ export function countSheep(num: number): string {
     it into an array of words.
 */
 export function stringToArray(s: string): string[] {
-    return s.split(" ");
+   return s.split(" ");
 }
 
 export function areYouPlayingBanjo(name: string): string {
-    let nameLower = name[0].toLocaleLowerCase();
-    return nameLower == "r"
-        ? `${name} plays banjo`
-        : `${name} does not play banjo`;
+   let nameLower = name[0].toLocaleLowerCase();
+   return nameLower == "r"
+      ? `${name} plays banjo`
+      : `${name} does not play banjo`;
 }
 
 /*
@@ -44,21 +44,21 @@ export function areYouPlayingBanjo(name: string): string {
 */
 
 export function fixTheMeerkat(arr: string[]): string[] {
-    return [arr[2], arr[1], arr[0]];
-    //return arr.reverse()
+   return [arr[2], arr[1], arr[0]];
+   //return arr.reverse()
 }
 
 export const fakeBin = (x: string): string => {
-    let result = "";
-    for (let i = 0; i < x.length; i++) {
-        if (x[i] < "5") {
-            result += "0";
-        } else if (x[i] >= "5") {
-            result += "1";
-        }
-    }
+   let result = "";
+   for (let i = 0; i < x.length; i++) {
+      if (x[i] < "5") {
+         result += "0";
+      } else if (x[i] >= "5") {
+         result += "1";
+      }
+   }
 
-    return result;
+   return result;
 };
 
 /*
@@ -78,7 +78,7 @@ export const fakeBin = (x: string): string => {
 */
 
 export function checkForFactor(base: number, factor: number) {
-    return base % factor === 0;
+   return base % factor === 0;
 }
 
 /*
@@ -92,5 +92,38 @@ export function checkForFactor(base: number, factor: number) {
 */
 
 export const booleanToString = (b: boolean): string => {
-    return b.toString();
+   return b.toString();
 };
+
+/*
+    Create a function that accepts a string and a single character, and returns an
+    integer of the count of occurrences the 2nd argument is found in the first one.
+
+    If no occurrences can be found, a count of 0 should be returned.
+
+    ("Hello", "o")  ==>  1
+    ("Hello", "l")  ==>  2
+    ("", "z")       ==>  0
+    str_count("Hello", 'o'); // returns 1
+    str_count("Hello", 'l'); // returns 2
+    str_count("", 'z'); // returns 0
+    Notes
+    The first argument can be an empty string
+    In languages with no distinct character data type, the second argument will be 
+    a string of length 1
+
+*/
+
+export function strCount(str: string, letter: string): number {
+   let count = 0;
+   for (let i = 0; i <= str.length; i++) {
+      if (str[i] === letter) {
+         count++;
+      }
+   }
+   return count;
+}
+
+export function strCount2(str: string, letter: string): number {
+   return str.split("").filter((value) => value == letter).length;
+}
