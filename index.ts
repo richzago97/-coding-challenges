@@ -56,6 +56,8 @@ import {
    fakeBin,
    checkForFactor,
    booleanToString,
+   strCount,
+   strCount2,
 } from "./desafios/string/8kyu/codewarsI";
 
 import {
