@@ -15,3 +15,16 @@ export const arrayPlusArray = (arr1: number[], arr2: number[]): number => {
 export const arrayPlusArray2 = (arr1: number[], arr2: number[]): number => {
    return arr1.concat(arr2).reduce((a, b) => a + b);
 };
+
+/*
+   Complete the function that takes two integers (a, b, where a < b) and return an array 
+   of all integers between the input parameters, including them.
+*/
+
+export function between(a: number, b: number): number[] {
+   const result: number[] = [];
+   for (let i = a; i <= b; i++) {
+      result.push(i);
+   }
+   return result;
+}
