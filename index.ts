@@ -33,6 +33,11 @@ import {
    countBy,
    sumMul,
 } from "./desafios/number/8kyu/codewarsI";
+
+import {
+   arrayPlusArray,
+   arrayPlusArray2,
+} from "./desafios/number/8kyu/codewarsII";
 import {
    cookingTime,
    fuelPrice,
