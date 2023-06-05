@@ -31,6 +31,7 @@ import {
    otherAngle,
    rentalCarCost,
    countBy,
+   sumMul,
 } from "./desafios/number/8kyu/codewarsI";
 import {
    cookingTime,
