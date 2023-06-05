@@ -88,7 +88,12 @@ import {
    whichArrayIsBigger,
    whichArrayIsBigger2,
 } from "./desafios/array/8kyu/arraysI";
-import { countEvenOdd, countEvenOdd2 } from "./desafios/array/8kyu/arraysII";
+import {
+   countEvenOdd,
+   countEvenOdd2,
+   first,
+   first2,
+} from "./desafios/array/8kyu/arraysII";
 import {
    calculateSquaredList,
    pushElementsMax7String,
